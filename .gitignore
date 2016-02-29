@@ -1,0 +1,5 @@
+att_faces/
+register_faces/
+*.ipynb
+.DS_Store
+.*.swp
