@@ -3,3 +3,4 @@ register_faces/
 *.ipynb
 .DS_Store
 .*.swp
+*.pyc
