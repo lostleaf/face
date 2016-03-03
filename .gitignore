@@ -5,3 +5,5 @@ register_faces/
 .*.swp
 *.pyc
 backup.zip
+det_test/
+test/

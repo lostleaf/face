@@ -26,7 +26,7 @@ class FaceCropper:
         img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         factor=1.01
         while 1:
-            face_pos = self.face_det.detectMultiScale(img_gray, scaleFactor=factor, minNeighbors=1, minSize=(30, 30))
+            face_pos = self.face_det.detectMultiScale(img_gray, scaleFactor=factor, minNeighbors=2, minSize=(10, 10))
             if len(face_pos) > 1:
                 factor += .1
             else:
