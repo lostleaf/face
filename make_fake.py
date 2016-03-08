@@ -28,7 +28,8 @@ def main():
         concat_img = concat_imgs(imgs[i], imgs[j], imgs[k])
         top_img, (ii, jj, kk) = top_imgs[idx_top[idx]]
         padding = np.zeros((15, top_img.shape[1], 3), dtype=np.uint8)
-        fake_img = np.concatenate((top_img, padding, concat_img), axis=0)
+        # fake_img = np.concatenate((top_img, padding, concat_img), axis=0)
+        fake_img = top_img
         cv2.imwrite("test/%d_(s%d_s%d_s%d).jpg" % (idx, ii + 1, jj + 1, kk + 1), fake_img)
 
 if __name__ == "__main__":

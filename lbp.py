@@ -20,6 +20,9 @@ class LBPHistFeat:
         # print lbp.max()
         hist, _ = np.histogram(lbp, normed=True, bins=self.n_bins, range=(0, self.n_bins))
         return hist
+
+    def transform(self, img_gray):
+        return self.extract(img_gray)
     
     def kldivergence(self, p, q):
         p = np.asarray(p)
